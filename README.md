@@ -11,10 +11,9 @@ This repository demonstrates how to run the PhishSafe SDK demo app on **Windows 
 Use Git to clone the project:
 
 ```bash
-git clone <your-phishsafe-repo-url>
+git clone https://github.com/manya7s/SudoCode-PhishSafe.git
 ```
 
-Replace `<your-phishsafe-repo-url>` with the actual GitHub repository URL.
 
 ---
 
