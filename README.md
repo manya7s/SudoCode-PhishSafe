@@ -42,7 +42,6 @@ flutter pub get
 
 This will fetch all required packages for the PhishSafe SDK and Demo application.
 
----
 
 Make sure the relative path is correct based on your folder structure.
 
