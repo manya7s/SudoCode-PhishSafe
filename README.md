@@ -16,8 +16,17 @@ git clone https://github.com/manya7s/SudoCode-PhishSafe.git
 
 
 ---
+### 2. Link the SDK to the Demo App
 
-### 2. Install Dependencies for the PhishSafe SDK
+In your demo app's `pubspec.yaml` file, add a path reference to the local SDK folder:
+
+```yaml
+dependencies:
+  phishsafe_sdk:
+    path: ../<path-to-your-PhishSafe-SDK-folder>
+```
+
+### 3. Install Dependencies for the PhishSafe SDK
 
 Navigate to the SDK folder and run in terminal:
 
@@ -34,16 +43,6 @@ flutter pub get
 This will fetch all required packages for the PhishSafe SDK and Demo application.
 
 ---
-
-### 3. Link the SDK to the Demo App
-
-In your demo app's `pubspec.yaml` file, add a path reference to the local SDK folder:
-
-```yaml
-dependencies:
-  phishsafe_sdk:
-    path: ../<path-to-your-PhishSafe-SDK-folder>
-```
 
 Make sure the relative path is correct based on your folder structure.
 
