@@ -97,6 +97,11 @@ flutter doctor
 
 ---
 
+## Model Notebook
+**URL:** [https://colab.research.google.com/drive/1icvGL5U2TMI2aVHATqYh4ktDKzEcSwsW?usp=sharing](https://colab.research.google.com/drive/1icvGL5U2TMI2aVHATqYh4ktDKzEcSwsW?usp=sharing)
+
+---
+
 ## Support
 
 If you face issues:
