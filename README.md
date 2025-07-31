@@ -1,6 +1,6 @@
 # PhishSafe SDK Demo (Windows + Android Studio Setup)
 
-This guide helps you get started with running the **PhishSafe SDK demo app** on **Windows OS** using **Android Studio**.
+This repository demonstrates how to run the PhishSafe SDK demo app on **Windows OS** using **Flutter** and **Android Studio**.
 
 ---
 
@@ -8,7 +8,106 @@ This guide helps you get started with running the **PhishSafe SDK demo app** on 
 
 ### 1. Clone the Repository
 
-Clone the project using Git:
+Use Git to clone the project:
 
 ```bash
 git clone <your-phishsafe-repo-url>
+```
+
+Replace `<your-phishsafe-repo-url>` with the actual GitHub repository URL.
+
+---
+
+### 2. Install Dependencies for the PhishSafe SDK
+
+Navigate to the SDK folder and run:
+
+```bash
+flutter pub get
+```
+
+This will fetch all required packages for the PhishSafe SDK.
+
+---
+
+### 3. Link the SDK to the Demo App
+
+In your demo app's `pubspec.yaml` file, add a path reference to the local SDK folder:
+
+```yaml
+dependencies:
+  phishsafe_sdk:
+    path: ../<path-to-your-PhishSafe-SDK-folder>
+```
+
+Make sure the relative path is correct based on your folder structure.
+
+---
+
+### 4. Fix TFLite Tensor Error (Important)
+
+Manually modify a file in the pub cache to fix a TensorFlow Lite compatibility issue.
+
+**Navigate to:**
+
+```
+C:\Users\<your-username>\AppData\Local\Pub\Cache\hosted\pub.dev\tflite_flutter-0.10.4\lib\src\tensor.dart
+```
+
+**Steps:**
+
+1. Open the file in any text or code editor.
+2. Press `Ctrl + F` and search for:
+
+   ```
+   UnmodifiableUint8ListView
+   ```
+
+3. Replace it with:
+
+   ```dart
+   Uint8List.fromList
+   ```
+
+4. Save the file.
+
+This fixes runtime issues when loading models using TFLite.
+
+---
+
+## Admin Dashboard
+
+You can view the PhishSafe Admin Dashboard at:
+
+**URL:** [https://phishsafe-web.onrender.com/](https://phishsafe-web.onrender.com/)
+
+---
+
+## Requirements
+
+- Flutter SDK installed
+- Dart SDK installed
+- Android Studio with Flutter and Dart plugins
+- Working Android emulator or connected device
+
+You can verify your setup by running:
+
+```bash
+flutter doctor
+```
+
+---
+
+## Support
+
+If you face issues:
+
+- Double-check the SDK path in `pubspec.yaml`
+- Make sure you've run `flutter pub get` inside the SDK
+- Verify that you’ve fixed the `tensor.dart` issue correctly
+
+---
+
+## License
+
+This project is intended for demo and academic use. License terms may apply depending on your use case.
