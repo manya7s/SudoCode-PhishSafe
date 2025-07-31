@@ -20,7 +20,7 @@ Replace `<your-phishsafe-repo-url>` with the actual GitHub repository URL.
 
 ### 2. Install Dependencies for the PhishSafe SDK
 
-Navigate to the SDK folder and run:
+Navigate to the SDK folder and run in terminal:
 
 ```bash
 flutter pub get
