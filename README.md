@@ -25,7 +25,13 @@ Navigate to the SDK folder and run in terminal:
 flutter pub get
 ```
 
-This will fetch all required packages for the PhishSafe SDK.
+Navigate to the Demo app folder and run in terminal:
+
+```bash
+flutter pub get
+```
+
+This will fetch all required packages for the PhishSafe SDK and Demo application.
 
 ---
 
